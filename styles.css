@@ -1,12 +1,20 @@
 @font-face {
-    font-family: SometypeMono;
-    src: url("dharmatype-Sometype-Mono-f21476e\SometypeMono-Regular.woff");
+    font-family: "SometypeMono";
+    src: url('sometype-mono/SometypeMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SometypeMono";
+    src: url('sometype-mono/SometypeMono-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
 }
 
 * {
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 
@@ -28,5 +36,6 @@ body {
     justify-content: center;
     z-index: 9999;
     color: #ffffff;
-    font-family: SometypeMono, sans-serif;
+    font-family: "SometypeMono", sans-serif;
+    font-size: 2.75rem;
 }

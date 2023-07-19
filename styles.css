@@ -15,17 +15,20 @@
 * {
     padding: 0;
     margin: 0;   
+    box-sizing: border-box;
 }
-
 
 body {
     width: 100vw;
     height: 100%;
-    background-image: url(BG.svg);
+    background-image: url(BG.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
-#landing {
+#greeting {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,4 +41,10 @@ body {
     color: #ffffff;
     font-family: "SometypeMono", sans-serif;
     font-size: 2.75rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#homepage{
+    opacity: 0;
 }

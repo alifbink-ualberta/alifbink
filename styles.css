@@ -24,7 +24,12 @@ body {
     background: linear-gradient(#160026 0%, #1A002F 50%, #160026 100% );
     background-position: center;
     background-repeat: no-repeat;
+    font-family: "SometypeMono", sans-serif;
+    font-weight: normal;
+    color: #ffffff;
 }
+
+/* Greeting */
 
 #greeting {
     position: fixed;
@@ -33,17 +38,15 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    color: #ffffff;
-    font-family: "SometypeMono", sans-serif;
     font-size: 2.75rem;
-    font-weight: normal;
     user-select: none;
     animation: greetingFade 2.5s ease-in-out forwards;
     opacity: 0;
     animation-delay: 0.5s;
+    pointer-events: none;
 }
 
-@keyframes greetingFade {
+/* @keyframes greetingFade {
     0% {
         opacity: 0;
         z-index: 999
@@ -121,4 +124,76 @@ body {
         opacity: 0;
         z-index: -1;
     }
+} */
+
+/* Navbar */
+
+#home-icon {
+    width: 40px;
+    padding-top: 5px;
 }
+
+
+nav {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+    /* opacity: 0; */
+    opacity: 1;
+    animation: navFade 1.5s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+a.nav-item{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-item:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-item:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-item:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* @keyframes navFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes navFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes navFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes navFade {
+    to {
+        opacity: 1;
+    }
+} */
+
+/* Landing */
+

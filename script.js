@@ -1,7 +1,9 @@
-/* let greeting = document.querySelector("#greeting")
 
-setTimeout(() => {
-    greeting.classList.add("fade-out")
-}, 1000)
+let greeting = document.querySelector("#greeting");
 
-console.log(greeting.classList) */
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+    greeting.classList.remove("fade-in")
+    greeting.classList.add("no-display");
+    }, 3000);
+  });

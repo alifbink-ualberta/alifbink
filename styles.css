@@ -27,12 +27,23 @@ body {
 }
 
 #greeting {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
     z-index: 999;
+    color: #ffffff;
+    font-family: "SometypeMono", sans-serif;
+    font-size: 2.75rem;
+    font-weight: normal;
+    /* user-select: none; */
+}
+
+#greeting.no-display {
+    opacity: 0;
+    z-index: -20;
     color: #ffffff;
     font-family: "SometypeMono", sans-serif;
     font-size: 2.75rem;
@@ -65,5 +76,8 @@ body {
 
 .fade-in{
     opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards; 
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
+
+
+

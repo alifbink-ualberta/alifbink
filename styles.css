@@ -19,32 +19,106 @@
 }
 
 body {
-    width: 100vw;
-    height: 100%;
-    background-image: url(BG.png);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#160026 0%, #1A002F 50%, #160026 100% );
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
 }
 
 #greeting {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    height: 100vh;
+    width: 100%;
     color: #ffffff;
     font-family: "SometypeMono", sans-serif;
     font-size: 2.75rem;
+    font-weight: normal;
+    user-select: none;
+    animation: greetingFade 2.5s ease-in-out forwards;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    animation-delay: 0.5s;
 }
 
-#homepage{
-    opacity: 0;
+@keyframes greetingFade {
+    0% {
+        opacity: 0;
+        z-index: 999
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-moz-keyframes greetingFade {
+    0% {
+        opacity: 0;
+        z-index: 999
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-o-keyframes greetingFade {
+    0% {
+        opacity: 0;
+        z-index: 999
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes greetingFade {
+    0% {
+        opacity: 0;
+        z-index: 999;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
 }

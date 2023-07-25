@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+:root{
+    --secondary-color: #533071;
+}
+
 * {
     padding: 0;
     margin: 0;   
@@ -215,23 +219,36 @@ a.nav-item:visited{
 
 /* Landing */
 
-#landing {
+.landing {
     position: relative;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 #name-reveal-btn{
     width: 35px;
 }
 
+
+
 #alif {
     font-weight: bold;
 }
 
-.intro-div {
-
+#le-firstdiv {
+    margin-bottom: 5px;
+    word-spacing: -2px;
 }
+
+#name-reveal-btn {
+    margin-bottom: -5px;
+    margin-left: -3px;
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+

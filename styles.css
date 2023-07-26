@@ -146,13 +146,14 @@ body {
 
 nav {
     font-size: 1.2rem;
-    width: 100vw;
+    width: 800px;
+    min-width: 400px;
     height: 80px;
     position: fixed;
     top: 0%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
     z-index: 20;
     /* opacity: 0; */
@@ -160,6 +161,13 @@ nav {
     animation: navFade 1.5s ease-in-out forwards;
     animation-delay: 3s;
     user-select: none;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width:1080px){
+    nav {
+        width: 65%;
+    }
 }
 
 .centered-flex {
@@ -219,6 +227,10 @@ a.nav-item:visited{
 
 /* Landing */
 
+/* #landing-expanded {
+    display: none;
+} */
+
 .landing {
     position: relative;
     text-align: center;
@@ -230,22 +242,18 @@ a.nav-item:visited{
 
 #name-reveal-btn{
     width: 35px;
+    margin-bottom: -4px;
+    margin-left: -3px;
 }
-
-
 
 #alif {
     font-weight: bold;
 }
 
 #le-firstdiv {
-    margin-bottom: 5px;
+    font-size: 2rem;
+    margin-bottom: 3px;
     word-spacing: -2px;
-}
-
-#name-reveal-btn {
-    margin-bottom: -5px;
-    margin-left: -3px;
 }
 
 .secondary-color{

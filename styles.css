@@ -146,7 +146,7 @@ body {
 
 nav {
     font-size: 1.2rem;
-    width: 800px;
+    width: 900px;
     min-width: 400px;
     height: 80px;
     position: fixed;
@@ -227,9 +227,13 @@ a.nav-item:visited{
 
 /* Landing */
 
-/* #landing-expanded {
+#landing-expanded {
     display: none;
-} */
+}
+
+#landing-unexpanded {
+    display: block;
+}
 
 .landing {
     position: relative;
@@ -240,9 +244,16 @@ a.nav-item:visited{
     font-size: 2.3rem;
 }
 
-#name-reveal-btn{
+.name-btn {
     width: 35px;
     margin-bottom: -4px;
+}
+
+#name-reveal-btn {
+    margin-left: -15px;
+}
+
+#name-hide-btn{
     margin-left: -3px;
 }
 

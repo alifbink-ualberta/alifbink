@@ -31,6 +31,7 @@ body {
     font-family: "SometypeMono", sans-serif;
     font-weight: normal;
     color: #ffffff;
+    
 }
 
 /* Greeting */
@@ -47,7 +48,6 @@ body {
     animation: greetingFade 2.5s ease-in-out forwards;
     opacity: 0;
     animation-delay: 0.5s;
-    pointer-events: none;
 }
 
 @keyframes greetingFade {
@@ -162,6 +162,7 @@ nav {
     animation-delay: 3s;
     user-select: none;
     transition: width 1s ease-in-out;
+    
 }
 
 @media (max-width:1150px){
@@ -305,7 +306,6 @@ a.nav-item:visited{
         opacity: 1;
     }
 }
-
 
 .no-animation {
     -webkit-animation: none !important;
